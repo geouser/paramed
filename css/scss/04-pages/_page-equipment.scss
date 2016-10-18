@@ -1,0 +1,42 @@
+.page-heading {
+    padding: 65px 0 0;
+
+    .heading {
+        font-size: 72px;
+        color: $blue;
+        font-family: $rm;
+        letter-spacing: 0.02em;
+    }
+}
+
+
+.breadcrumbs {
+    text-align: center;
+    
+    span[property=itemListElement] {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px;
+        font-family: $rb;
+        color: $blue;
+    }
+
+    span[property=itemListElement] a {
+        display: inline-block;
+        color: inherit;
+        vertical-align: middle;
+    }
+
+    span[property=itemListElement]:not(:last-child):after {
+        content: '';
+        width: 16px;
+        height: 10px;
+        margin: 4px 5px 0;
+        background-image: url(../images/breadcrumbs-arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: 50% 50%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
