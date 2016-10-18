@@ -23,5 +23,21 @@
             background-color: #000;
             opacity: 0.6;
         }
+
+        &__title {
+            font-size: 72px;
+            color: #fff;
+            font-family: $rm;
+            letter-spacing: 0.025em;
+            font-weight: normal;
+        }
+
+        &__subtitle {
+            font-size: 48px;
+            color: #fff;
+            font-family: $rl;
+            letter-spacing: 0.025em;
+            margin-bottom: 85px;
+        }
     }
 }
