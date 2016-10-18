@@ -103,11 +103,13 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $(this).toggleClass('active');
         $(this).siblings('.pageNav__open').toggleClass('active');
-        if ($('header').hasClass('active')) {
+        if ( !$('body').hasClass('main-page') ) {
+            if ( $('header').hasClass('active') ) {
                 $('body, html').css('overflow', 'hidden');
             } else {
                 $('body, html').css('overflow', 'visible');
             }
+        }
     });
 
 
