@@ -28,20 +28,4 @@
             }
         }
     }
-    .languages__op {
-        background-color: #FFF;
-        -webkit-box-shadow: 0 0 3px rgba(0,0,0,.4);
-                box-shadow: 0 0 3px rgba(0,0,0,.4);
-        padding: 4px 10px;
-        -webkit-border-radius: 4px;
-                border-radius: 4px;
-        position: absolute;
-        bottom: 120%;
-        padding-bottom: 6px;
-        right: -4px;
-        display: none;
-        &.active {
-            display: block;
-        }
-    }
 }

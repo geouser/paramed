@@ -112,11 +112,6 @@ jQuery(document).ready(function($) {
         }
     });
 
-    $('.languages__current').click(function(){
-        $(this).toggleClass('active');
-        $('.languages__op').toggleClass('active');
-    });
-
 
     /*---------------------------
                                   Magnific popup
