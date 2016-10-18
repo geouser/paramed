@@ -10,8 +10,8 @@
         position: relative;
         z-index: 1;
         text-align: center;
-        padding-top: 100px;
-        padding-bottom: 65px;
+        /*padding-top: 100px;*/
+        /*padding-bottom: 65px;*/
 
         &:after {
             content: '';
@@ -39,6 +39,23 @@
             font-family: $rl;
             letter-spacing: 0.025em;
             margin-bottom: 85px;
+        }
+
+        .partners-box {
+            @include flex($justify: center);
+            padding: 0 100px;
+
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 25px 0;
+                padding: 0 20px;
+                width: 33.333%;
+
+                img {
+                    max-width: 100%;
+                }
+            }
         }
     }
 }

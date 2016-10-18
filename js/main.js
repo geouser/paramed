@@ -57,6 +57,8 @@ jQuery(document).ready(function($) {
             controlArrows: true,
             verticalCentered: true,
             sectionsColor : '',
+            paddingTop: '100px',
+            paddingBottom: '65px',
             fixedElements: '',
             responsiveWidth: 0,
             responsiveHeight: 0,
