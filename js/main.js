@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
             controlArrows: true,
             verticalCentered: true,
             sectionsColor : '',
-            fixedElements: '#header, .footer',
+            fixedElements: '',
             responsiveWidth: 0,
             responsiveHeight: 0,
             responsiveSlides: false,
