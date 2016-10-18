@@ -100,7 +100,7 @@ jQuery(document).ready(function($) {
     $('.menu-button').on('click', function(event) {
         event.preventDefault();
         $(this).toggleClass('active');
-        $(this).siblings('header').toggleClass('active');
+        $(this).siblings('.pageNav__open').toggleClass('active');
         if ($('header').hasClass('active')) {
                 $('body, html').css('overflow', 'hidden');
             } else {

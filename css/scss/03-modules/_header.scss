@@ -33,13 +33,137 @@
 .pageNav {
     width: 190px;
     text-align: right;
-    ul {
-        @include position(fixed, 15px, 15px, auto, auto);
-        display: none;
+    color: #fff;
+    &__open {
+        @include position(fixed, 0, 0, 0, 0);
+        @include flex($alignI: center, $direction: column, $justify: space-around);
+        z-index: 1;
+        padding-top: 195px;
+        background: $green;
+        -webkit-transition: opacity .2s;
+           -moz-transition: opacity .2s;
+            -ms-transition: opacity .2s;
+             -o-transition: opacity .2s;
+                transition: opacity .2s;
+        visibility: hidden;
+        opacity: 0;
+        @include mh700 {
+            padding-top: 80px;
+        }
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+        > nav {
+            > ul {
+                list-style-type: none;
+                @include flex($alignI: flex-start);
+                > li {
+                    margin: 0 45px;
+                    @include m1600 {
+                        margin: 0 25px;
+                    }
+                    > a {
+                        color: #FFF;
+                        font: 48px $rl;
+                        &:hover {
+                            color: $blue;
+                        }
+                        @include m1600 {
+                            font-size: 38px;
+                        }
+                    }
+                    .sub-menu {
+                        margin-top: 30px;
+                        list-style-type: none;
+                        text-align: center;
+                        li {
+                            display: block;
+                            margin-bottom: 30px;
+                            &:last-of-type {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                color: #FFF;
+                                font: 30px $rl;
+                                display: block;
+                                &:hover {
+                                    color: $blue;
+                                }
+                                @include m1600 {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__contacts {
+            text-align: center;
+            .socials {
+                margin-top: 40px;
+                .socials__item {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 33px;
+                    height: 33px;
+                    margin: 0 22px;
+                    background-image: url("../images/social.png");
+                    &--fb {
+                        background-position: 0 0;
+                        &:hover {
+                            background-position: 0px -41px;
+                        }
+                    }
+                    &--tw {
+                        background-position: -82px 0px;
+                        &:hover {
+                            background-position: -82px -41px;
+                        }
+                    }
+                    &--in {
+                        width: 35px;
+                        background-position: -161px 0;
+                        &:hover {
+                            background-position: -161px -41px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-
+.tel {
+    font: 21px $rb;
+    color: #fff;
+    &:before {
+        margin-right: 8px;
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        background-image: url("../images/tel.png");
+        -webkit-background-size: 100% 100%;
+             -o-background-size: 100% 100%;
+                background-size: 100% 100%;
+    }
+}
+.powered {
+    font: 21px $rb;
+    color: #fff;
+    a {
+        color: #FFF;
+        &:hover {
+            color: $blue;
+        }
+    }
+    @include m1600 {
+        font-size: 16px;
+    }
+}
 /* ------------------------------------ */
 /*  MENU BUTTON  */
 
@@ -51,6 +175,7 @@
     background: transparent;
     z-index: 100;
     border: none;
+    z-index: 2;
     -webkit-border-radius: 4px;
             border-radius: 4px;
     .menu-line {
@@ -62,6 +187,11 @@
         -webkit-border-radius: 2px;
         border-radius: 2px;
         @include transition(all, .4s);
+    }
+    &.active {
+        .menu-line {
+            background-color: #fff;
+        }
     }
     &:hover {
         .menu-line {
@@ -85,3 +215,5 @@
         /*..............end media.............*/
 
 }
+
+
