@@ -1,0 +1,40 @@
+.tabs {
+    &-nav {
+        @include flex();
+        margin-bottom: 90px;
+
+        &__item {
+            display: inline-block;
+            vertical-align: middle;
+            width: -webkit-calc(25% - 20px);
+            width: calc(25% - 20px);
+            margin: 0 10px;
+
+            &.ui-state-active {
+                .button {
+                    background-color: $blue;
+                }
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+
+    .tab-content {
+        @include flex($alignI: flex-start, $justify: flex-start);
+        padding-bottom: 50px;
+
+
+        .product {
+            display: inline-block;
+            vertical-align: middle;
+            width: -webkit-calc(25% - 20px);
+            width: calc(25% - 20px);
+            margin: 0 10px 50px;
+        }
+    }
+}

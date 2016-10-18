@@ -1,21 +1,33 @@
 .offer {
     height: 600px;
-        background-image: url(../images/ambulances.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+
+
     .wrapper {
         height: 100%;
-        @include  flex($direction: column, $justify: center);
+        @include flex($justify: center);
     }
     h1 {
         font: 72px $rm;
         color: #FFF;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    &--narrow {
+        height: auto;
+        padding: 215px 0 250px;
+        .wrapper {
+            padding: 0 310px;
+            text-align: left;
+        }
     }
 }
 
 .breadcrumbs {
-    margin-top: 35px;
+    width: 100%;
     span {
         font: 14px/24px $rb;
         color: #FFF;

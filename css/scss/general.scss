@@ -21,7 +21,12 @@
 @import '03-modules/controls';
 @import '03-modules/contact-us';
 @import '03-modules/footer-menu';
+@import '03-modules/content';
+@import '03-modules/tabs';
+@import '03-modules/accordion';
 
 /*Pages styles*/
 @import '04-pages/page-main.scss';
 @import '04-pages/page-equipment.scss';
+@import '04-pages/page-news.scss';
+@import '04-pages/page-gallery.scss';

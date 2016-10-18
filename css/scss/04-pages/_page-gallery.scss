@@ -1,0 +1,10 @@
+.gallery-box {
+    @include flex($alignI: flex-start, $justify: flex-start);
+    padding-bottom: 90px;
+
+    .gallery-item {
+        width: -webkit-calc(25% - 20px);
+        width: calc(25% - 20px);
+        margin: 10px;
+    }
+}

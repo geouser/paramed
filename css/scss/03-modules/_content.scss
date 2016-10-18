@@ -1,0 +1,43 @@
+.content {
+    padding-bottom: 100px;
+    
+    &-box {
+        width: 780px;
+        margin: -210px auto 0 auto;
+        padding: 90px 100px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 0px rgba(98, 97, 95, 0.5);
+    }
+}
+
+
+article {
+    p,
+    h3,
+    h2,
+    h4,
+    h5,
+    ul {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    strong,
+    h3 {
+        font-weight: normal;;
+        font-size: 21px;
+        color: $blue;
+    }
+
+    ul {
+        li {
+            list-style: none;
+            display: block;
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

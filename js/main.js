@@ -104,6 +104,16 @@ jQuery(document).ready(function($) {
             heightStyle: "auto"
         });    
     }
+
+    /*---------------------------
+                                  Accordion
+    ---------------------------*/
+    if ( $( ".accordion" ).length > 0 ) {
+        $( ".accordion" ).accordion({
+            collapsible: true,
+            heightStyle: "auto"
+        });    
+    }
     
 
     /*---------------------------
