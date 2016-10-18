@@ -59,3 +59,30 @@
         }
     }
 }
+
+#fp-nav {
+    left: 100px!important;
+}
+#fp-nav ul li {
+    margin-left: 0;
+}
+#fp-nav ul li a {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+
+    &:hover,
+    &.active {
+        background-color: #fff;
+    }
+
+
+    span,
+    &+.fp-tooltip {
+        display: none!important;
+    }
+}
