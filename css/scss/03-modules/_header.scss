@@ -2,6 +2,9 @@
 .mainHeader {
     padding: 22px 0;
     background-color: #FFF;
+    position: relative;
+    z-index: 100;
+    @include position(fixed, 0px, 0px, auto, 0);
     .wrapper {
         @include flex();
     }
