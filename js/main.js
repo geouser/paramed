@@ -94,7 +94,17 @@ jQuery(document).ready(function($) {
             $element2.toggleClass(className, $document.scrollTop() >= 1);
         });
     });
-      
+
+    /*---------------------------
+                                  Tabs
+    ---------------------------*/
+    if ( $( ".tabs" ).length > 0 ) {
+        $( ".tabs" ).tabs({
+            collapsible: true,
+            heightStyle: "auto"
+        });    
+    }
+    
 
     /*---------------------------
                                   MENU TOGGLE

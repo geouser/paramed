@@ -1,5 +1,5 @@
 .page-heading {
-    padding: 65px 0 0;
+    padding: 65px 0 45px;
 
     .heading {
         font-size: 72px;
@@ -7,36 +7,100 @@
         font-family: $rm;
         letter-spacing: 0.02em;
     }
+
+    .breadcrumbs {
+        text-align: center;
+        
+        span[property=itemListElement] {
+            font-family: $rb;
+            color: $blue;
+        }
+
+        span[property=itemListElement] a,
+        span {
+            color: inherit;
+        }
+        
+        span[property=itemListElement]:not(:last-child) a:after {
+            content: '';
+            width: 16px;
+            height: 10px;
+            margin: 0 5px;
+            background-image: url(../images/breadcrumbs-arrow-right.svg);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: 50% 50%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
 }
 
 
-.breadcrumbs {
-    text-align: center;
-    
-    span[property=itemListElement] {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 14px;
-        font-family: $rb;
+.tabs {
+    &-nav {
+        @include flex();
+        margin-bottom: 90px;
+
+        &__item {
+            display: inline-block;
+            vertical-align: middle;
+            width: -webkit-calc(25% - 20px);
+            width: calc(25% - 20px);
+            margin: 0 10px;
+
+            &.ui-state-active {
+                .button {
+                    background-color: $blue;
+                }
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+
+    .tab-content {
+        @include flex($alignI: flex-start, $justify: flex-start);
+        padding-bottom: 50px;
+
+
+        .product {
+            display: inline-block;
+            vertical-align: middle;
+            width: -webkit-calc(25% - 20px);
+            width: calc(25% - 20px);
+            margin: 0 10px 50px;
+        }
+    }
+}
+
+
+.product {
+    cursor: pointer;
+
+    &__title {
+        font-size: 30px;
+        font-family: $rl;
         color: $blue;
+        margin-bottom: 17px;
     }
 
-    span[property=itemListElement] a {
-        display: inline-block;
-        color: inherit;
-        vertical-align: middle;
-    }
+    &__image {
+        height: 280px;
+        background-color: #E8F5FE;
+        @extend %vertAlign;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        border-radius: 10px;
 
-    span[property=itemListElement]:not(:last-child):after {
-        content: '';
-        width: 16px;
-        height: 10px;
-        margin: 4px 5px 0;
-        background-image: url(../images/breadcrumbs-arrow-right.svg);
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        background-position: 50% 50%;
-        display: inline-block;
-        vertical-align: middle;
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
     }
 }
