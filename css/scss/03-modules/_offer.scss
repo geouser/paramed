@@ -1,3 +1,49 @@
 .offer {
-    height: 800px;
+    height: 600px;
+        background-image: url(../images/ambulances.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    .wrapper {
+        height: 100%;
+        @include  flex($direction: column, $justify: center);
+    }
+    h1 {
+        font: 72px $rm;
+        color: #FFF;
+    }
+}
+
+.breadcrumbs {
+    margin-top: 35px;
+    span {
+        font: 14px/24px $rb;
+        color: #FFF;
+        position: relative;
+        a {
+            position: relative;
+            color: #FFF;
+            &:after {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                color: #FFF;
+                width: 15px;
+                height: 8px;
+                margin: 0 6px;
+                background-repeat: no-repeat;
+                background-image: url("../images/arrowRight.png");
+                -webkit-background-size: 100% 100%;
+                     -o-background-size: 100% 100%;
+                        background-size: 100% 100%;
+            }
+        }
+        &:last-of-type {
+            a {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
 }
