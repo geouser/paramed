@@ -1,0 +1,36 @@
+.footer-menu {
+    padding: 100px 0;
+    text-align: center;
+
+    .menu-item {
+        display: inline-block;
+        vertical-align: top;
+        list-style: none;
+        text-align: left;
+
+        &:not(:last-child) {
+            margin-right: 45px;
+        }
+
+        a {
+            font-size: 18px;
+            color: $blue;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .sub-menu {
+            .menu-item {
+                display: block;
+                margin-right: 0;
+
+                a {
+                    color: $grey;
+                    text-decoration: none;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
