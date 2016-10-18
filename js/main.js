@@ -16,9 +16,9 @@ jQuery(document).ready(function($) {
             menu: '#menu',
             lockAnchors: false,
             anchors:['firstPage', 'secondPage'],
-            navigation: false,
+            navigation: true,
             navigationPosition: 'left',
-            navigationTooltips: ['firstSlide', 'secondSlide'],
+            navigationTooltips: ['firstPage', 'secondPage'],
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
@@ -57,7 +57,9 @@ jQuery(document).ready(function($) {
             controlArrows: true,
             verticalCentered: true,
             sectionsColor : '',
-            fixedElements: '#header, .footer',
+            paddingTop: '100px',
+            paddingBottom: '65px',
+            fixedElements: '#menu',
             responsiveWidth: 0,
             responsiveHeight: 0,
             responsiveSlides: false,
@@ -101,11 +103,13 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $(this).toggleClass('active');
         $(this).siblings('.pageNav__open').toggleClass('active');
-        if ($('header').hasClass('active')) {
+        if ( !$('body').hasClass('main-page') ) {
+            if ( $('header').hasClass('active') ) {
                 $('body, html').css('overflow', 'hidden');
             } else {
                 $('body, html').css('overflow', 'visible');
             }
+        }
     });
 
 
