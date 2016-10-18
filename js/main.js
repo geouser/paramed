@@ -17,10 +17,10 @@ jQuery(document).ready(function($) {
             lockAnchors: false,
             anchors:['firstPage', 'secondPage'],
             navigation: false,
-            navigationPosition: 'right',
+            navigationPosition: 'left',
             navigationTooltips: ['firstSlide', 'secondSlide'],
             showActiveTooltip: false,
-            slidesNavigation: true,
+            slidesNavigation: false,
             slidesNavPosition: 'bottom',
 
             //Scrolling
@@ -56,9 +56,7 @@ jQuery(document).ready(function($) {
             //Design
             controlArrows: true,
             verticalCentered: true,
-            sectionsColor : ['#ccc', '#fff'],
-            paddingTop: '0',
-            paddingBottom: '0',
+            sectionsColor : '',
             fixedElements: '#header, .footer',
             responsiveWidth: 0,
             responsiveHeight: 0,
