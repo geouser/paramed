@@ -119,12 +119,14 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   Perfect scrollbar
     ---------------------------*/
-    if ( $('.scroll').length > 0 ) {
+    if ( $('.scroll').length > 0 && !window.params.isMobile ) {
         $('.scroll').perfectScrollbar();
         $(window).on('resize', function(event) {
             event.preventDefault();
             $('.scroll').perfectScrollbar('update');
         });    
+    } else {
+        $('.scroll').css('overflow', 'auto');
     }
     
 

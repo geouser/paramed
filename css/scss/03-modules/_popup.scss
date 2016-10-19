@@ -48,9 +48,14 @@
         background-color: #B6B6B8;
     }
 
-    .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
-        background-color: $green;
-        width: 8px;
+    .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y,
+    .ps-container.ps-in-scrolling  > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+        background-color: $green!important;
+        width: 8px!important;
         right: 0;
+
+        &:hover {
+            background-color: $green;
+        }
     }
 }
