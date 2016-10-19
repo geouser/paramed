@@ -34,6 +34,7 @@
         right: 40px;
         @include m600 {
             right: 20px;
+            top: 20px;
         }
     }
 
@@ -88,7 +89,7 @@
         @include flex($alignI: stretch);
         width: -webkit-calc(100% + 20px);
         width: calc(100% + 20px);
-        @include m700 {
+        @media (max-width: 1000px) {
             width: 100%;
         }
     }
@@ -98,17 +99,28 @@
         width: -webkit-calc(50% - 20px);
         width: calc(50% - 20px);
         margin: 0 10px 40px;
-        @include m700 {
+
+        @media (max-width: 1000px) {
             width: 100%;
-            margin: 0 auto 20px;
+            margin: 0 0 40px;
+            .title {
+                text-align: center;
+            }
         }
     }
+
+    
 
     .desc,
     .options {
         width: -webkit-calc(100% - 20px);
         width: calc(100% - 20px);
         margin: 0 10px 40px;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            margin: 0 0 40px;
+        }
 
         &:last-child {
             margin-bottom: 0;
