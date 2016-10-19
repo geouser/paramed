@@ -1,0 +1,52 @@
+.autoBrands {
+    width: 110%;
+    margin-top: 30px;
+    @include flex($justify: space-between);
+    list-style-type: none;
+    img {
+        display: block;
+        &.hover {
+            display: none;
+        }
+    }
+    li:hover {
+        img {
+            display: none;
+            &.hover {
+                display: block;
+            }
+        }
+    }
+}
+
+.cars {
+    @include flex($alignI: flex-start);
+    margin-top: 40px;
+}
+.car {
+    width: 49%;
+    margin-top: 40px;
+    &__title {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 30px;
+        font-family: $rl;
+        color: $blue;
+    }
+    &__img {
+        height: 340px;
+        position: relative;
+        overflow: hidden;
+        -webkit-border-radius: 15px;
+                border-radius: 15px;
+        img {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            left:0; right: 0;
+            top: 0;
+            margin: auto;
+        }
+    }
+}

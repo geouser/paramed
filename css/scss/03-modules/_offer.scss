@@ -5,6 +5,9 @@
     background-position: 50% 50%;
     position: relative;
     z-index: 1;
+    &--inner {
+        padding-bottom: 210px;
+    }
 
     &+section {
         position: relative;
@@ -14,7 +17,7 @@
 
     .wrapper {
         height: 100%;
-        @include flex($justify: center);
+        @include flex($justify: center, $direction: column);
     }
     h1 {
         font: 72px $rm;
@@ -38,6 +41,9 @@
         h1 {
             color: $blue;
         }
+    }
+    .button {
+        margin-top: 80px;
     }
 }
 
