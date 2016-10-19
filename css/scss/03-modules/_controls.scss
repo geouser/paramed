@@ -19,3 +19,97 @@
         }
     }
 }
+
+
+.form-group {
+    width: -webkit-calc(100% - 20px);
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    font-size: 21px;
+    color: $grey;
+    margin-bottom: 35px;
+
+    &__title {
+        font-size: 30px;
+        font-family: $rl;
+        color: $blue;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    label {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        border: 1px solid $green;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        font-size: 21px;
+        color: $blue;
+        padding: 0 15px 0 25px;
+        border-radius: 10px;
+
+        &:focus,
+        &:active {
+            border-color: $blue;
+        }
+    }
+
+    input[type=text] {
+        height: 55px;
+    }
+
+    textarea {
+        height: 110px;
+        resize: none;
+        padding-top: 10px;
+    }
+}
+
+
+.double-group {
+    @include flex($alignI: flex-start);
+
+    .form-group {
+        width: -webkit-calc(50% - 20px);
+        width: calc(50% - 20px);
+    }
+}
+
+
+.form {
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+
+    &__title {
+        margin: 0 10px;
+        font-size: 30px;
+        color: $blue;
+        font-family: $rl;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+
+        &--button {
+            margin-bottom: 0;
+        }
+    }
+
+    .button {
+        border-radius: 10px;
+        width: 100%;
+        padding: 0;
+        margin-top: 30px;
+    }
+}

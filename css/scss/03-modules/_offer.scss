@@ -3,6 +3,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    position: relative;
+    z-index: 1;
+
+    &+section {
+        position: relative;
+        z-index: 2;
+    }
 
 
     .wrapper {
@@ -14,6 +21,8 @@
         color: #FFF;
         width: 100%;
         margin-bottom: 15px;
+        position: relative;
+        z-index: 2;
     }
 
     &--narrow {
@@ -22,6 +31,12 @@
         .wrapper {
             padding: 0 310px;
             text-align: left;
+        }
+    }
+
+    &--map {
+        h1 {
+            color: $blue;
         }
     }
 }
