@@ -14,7 +14,16 @@
     padding: 90px 100px;
     width: 780px;
     overflow: hidden;
-
+    @include m800 {
+        width: 100%;
+        padding: 80px 70px;
+    }
+    @include m600 {
+        padding: 60px 40px;
+    }
+    @include m400 {
+        padding: 40px 20px;
+    }
     &--article {
         height: 100%;
     }
@@ -23,6 +32,9 @@
         font-size: 48px;
         top: 40px;
         right: 40px;
+        @include m600 {
+            right: 20px;
+        }
     }
 
     article h3 {
@@ -64,7 +76,9 @@
 .popup--equipment {
     width: 1200px;
     font-size: 21px;
-
+    @include m1200 {
+        width: 100%;
+    }
     @media (max-width: 1220px) {
         width: 100%;
         font-size: 18px;
@@ -74,6 +88,9 @@
         @include flex($alignI: stretch);
         width: -webkit-calc(100% + 20px);
         width: calc(100% + 20px);
+        @include m700 {
+            width: 100%;
+        }
     }
 
     figure,
@@ -81,6 +98,10 @@
         width: -webkit-calc(50% - 20px);
         width: calc(50% - 20px);
         margin: 0 10px 40px;
+        @include m700 {
+            width: 100%;
+            margin: 0 auto 20px;
+        }
     }
 
     .desc,
