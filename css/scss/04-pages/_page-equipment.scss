@@ -7,6 +7,15 @@
         font-family: $rm;
         letter-spacing: 0.02em;
         margin-bottom: 15px;
+         @include m1200 {
+            font-size: 58px;
+        }
+        @include m900 {
+            font-size: 46px;
+        }
+        @include m600 {
+            font-size: 36px;
+        }
     }
 
     .breadcrumbs {

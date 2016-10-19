@@ -14,7 +14,12 @@
         text-align: left;
         padding-bottom: 45px;
         cursor: pointer;
-
+        @media (max-width: 780px) {
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            padding-bottom: 30px;
+        }
         figure {
             height: 200px;
             background-position: 50% 50%;
@@ -28,6 +33,9 @@
         .title,
         .text {
             padding: 0 50px;
+            @media (max-width: 600px) {
+                padding: 0 20px;
+            }
         }
 
         .title {
