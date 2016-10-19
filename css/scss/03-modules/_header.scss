@@ -193,7 +193,8 @@
     &__open {
         @include position(fixed, 0, 0, 0, 0);
         @include flex($alignI: center, $direction: column, $justify: space-around, $wrap: nowrap);
-        overflow-y: scroll;
+        overflow: auto;
+        overflow-x: hidden;
         max-width: 100vw;
         z-index: 1;
         padding-top: 195px;
