@@ -3,6 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    @include m1200 {
+        background-attachment: fixed;
+    }
 }
 
 .fullpage {
@@ -31,6 +34,15 @@
             font-family: $rm;
             letter-spacing: 0.025em;
             font-weight: normal;
+            @include m1200 {
+                font-size: 58px;
+            }
+            @include m900 {
+                font-size: 46px;
+            }
+            @include m600 {
+                font-size: 36px;
+            }
         }
 
         &__subtitle {
@@ -39,19 +51,36 @@
             font-family: $rl;
             letter-spacing: 0.025em;
             margin-bottom: 85px;
+            @include m1200 {
+                font-size: 38px;
+            }
+            @include m900 {
+                font-size: 30px;
+            }
+            @include m600 {
+                font-size: 24px;
+            }
         }
 
         .partners-box {
             @include flex($justify: center);
             padding: 0 100px;
-
+            margin-top: 80px;
+            @include m1200 {
+                padding: 0;
+            }
+            @include m600 {
+                margin-top: 40px;
+            }
             a {
                 display: inline-block;
                 vertical-align: middle;
                 margin: 25px 0;
                 padding: 0 20px;
                 width: 33.333%;
-
+                @include m1200 {
+                    padding: 0 5px;
+                }
                 img {
                     max-width: 100%;
                 }

@@ -26,6 +26,15 @@
         margin-bottom: 15px;
         position: relative;
         z-index: 2;
+        @include m1200 {
+            font-size: 58px;
+        }
+        @include m900 {
+            font-size: 46px;
+        }
+        @include m600 {
+            font-size: 36px;
+        }
     }
 
     &--narrow {
@@ -39,6 +48,9 @@
                 padding: 0 15px;
                 text-align: center;
             }
+        }
+        @include m700 {
+            padding: 150px 0 250px;
         }
     }
 

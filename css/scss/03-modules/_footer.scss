@@ -32,4 +32,10 @@
             }
         }
     }
+    @include m700 {
+        width: 126px;
+    }
+    @include m600 {
+        font-size: 16px;
+    }
 }

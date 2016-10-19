@@ -3,8 +3,30 @@
     margin-left: -5%;
     margin-top: 90px;
     @include flex($justify: space-between);
+    @include m1400 {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    @include m900 {
+        -webkit-justify-content: space-around;
+                justify-content: space-around;
+    }
+    @include m600 {
+        margin-top: 40px;
+    }
     &__item {
         max-width: 290px;
+        @include m1200 {
+            width: 25%;
+            padding: 0 10px;
+        }
+        @include m900 {
+            width: 50%;
+            margin-bottom: 60px;
+        }
+        @include m600 {
+            width: 100%;
+        }
         &__img {
             display: block;
             margin: 0 auto 25px;
@@ -13,6 +35,12 @@
             overflow: hidden;
             -webkit-border-radius: 15px;
                     border-radius: 15px;
+            @include m1200 {
+                height: 140px;
+            }
+            @include m600 {
+                height: 100px;
+            }
             &:before {
                 content: "";
                 height: 100%;
@@ -30,6 +58,12 @@
         span {
             font-size: 30px;
             color: #FFF;
+            @include m1200 {
+                font-size: 24px;
+            }
+            @include m600 {
+                font-size: 18px;
+            }
         }
     }
 }
