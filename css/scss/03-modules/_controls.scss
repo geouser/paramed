@@ -11,7 +11,13 @@
     cursor: pointer;
     line-height: 55px;
     position: relative;
-
+    @include m600 {
+        padding: 0 45px;
+    }
+    @include m400 {
+        padding: 0 35px;
+        font-size: 18px;
+    }
     &--green {
         background-color: $green;
 

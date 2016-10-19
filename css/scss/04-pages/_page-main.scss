@@ -65,8 +65,12 @@
         .partners-box {
             @include flex($justify: center);
             padding: 0 100px;
+            margin-top: 80px;
             @include m1200 {
                 padding: 0;
+            }
+            @include m600 {
+                margin-top: 40px;
             }
             a {
                 display: inline-block;

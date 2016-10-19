@@ -11,6 +11,9 @@
         -webkit-justify-content: space-around;
                 justify-content: space-around;
     }
+    @include m600 {
+        margin-top: 40px;
+    }
     &__item {
         max-width: 290px;
         @include m1200 {
