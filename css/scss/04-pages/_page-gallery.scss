@@ -1,17 +1,24 @@
 .gallery-box {
     @include flex($alignI: flex-start, $justify: flex-start);
     padding-bottom: 90px;
-    @include m1200 {
-        -webkit-justify-content: center;
-                justify-content: center;
-    }
+
     .gallery-item {
         width: -webkit-calc(25% - 20px);
         width: calc(25% - 20px);
         margin: 10px;
-        @include m1200 {
-            width: 280px;
-            height: 280px;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        @media (max-width: 800px) {
+            width: -webkit-calc(33% - 20px);
+            width: calc(33% - 20px);
+        }
+        @media (max-width: 450px) {
+            width: -webkit-calc(50% - 20px);
+            width: calc(50% - 20px);
         }
     }
 }
