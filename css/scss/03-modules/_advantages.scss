@@ -1,0 +1,35 @@
+.advantages {
+    width: 110%;
+    margin-left: -5%;
+    margin-top: 90px;
+    @include flex($justify: space-between);
+    &__item {
+        max-width: 290px;
+        &__img {
+            display: block;
+            margin: 0 auto 25px;
+            height: 190px;
+            position: relative;
+            overflow: hidden;
+            -webkit-border-radius: 15px;
+                    border-radius: 15px;
+            &:before {
+                content: "";
+                height: 100%;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: -2px;
+            }
+            img {
+               display: inline-block;
+               vertical-align: middle;
+               max-width: 98%;
+               max-height: 100%;
+            }
+        }
+        span {
+            font-size: 30px;
+            color: #FFF;
+        }
+    }
+}

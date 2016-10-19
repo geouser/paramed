@@ -1,5 +1,6 @@
 .autoBrands {
     width: 110%;
+    margin-left: -5%;
     margin-top: 30px;
     @include flex($justify: space-between);
     list-style-type: none;
@@ -16,6 +17,12 @@
                 display: block;
             }
         }
+    }
+}
+
+.section {
+    .autoBrands {
+        margin-top: 85px;
     }
 }
 
