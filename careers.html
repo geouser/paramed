@@ -60,7 +60,7 @@
                         <article>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
-                            <button class="button button--green">Apply now</button>
+                            <button href="#modal-popup-apply" class="button button--green magnific">Apply now</button>
                         </article>
                     </div>
 
@@ -270,6 +270,31 @@
                 </div>
                 <div class="form-group form-group--button">
                     <button class="button button--green">Send message</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="modal-popup-apply" class="mfp-hide zoom-anim-dialog popup">
+            <form action="" class="form">
+                <p class="form__title">Sed ut perspiciatis</p>
+                <div class="double-group">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Telephone</label>
+                        <input type="text" name="phone" required>
+                    </div>
+                </div>
+                <div class="double-group">
+                    <div class="form-group form-group--button form-group--file">
+                        <button class="button button--dark js-attach-cv">Attach a CV</button>
+                        <input type="file" name="attach">
+                    </div>
+                    <div class="form-group form-group--button">
+                        <button class="button button--green">Apply now</button>
+                    </div>
                 </div>
             </form>
         </div>
