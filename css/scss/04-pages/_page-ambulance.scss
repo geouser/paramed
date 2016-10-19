@@ -2,7 +2,7 @@
     width: 110%;
     margin-left: -5%;
     margin-top: 30px;
-    @include flex($justify: space-between);
+    @include flex($justify: space-between, $wrap: nowrap);
     list-style-type: none;
     @include m1400 {
         max-width: 100%;
@@ -15,7 +15,7 @@
         }
     }
     li {
-        max-width: 20%;
+        max-width: 19%;
         img {
             max-width: 90%;
         }

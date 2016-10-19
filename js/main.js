@@ -10,75 +10,78 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   Fullpage
     ---------------------------*/
-    if ( $('#fullpage').length > 0 ) {
-        $('#fullpage').fullpage({
-            //Navigation
-            menu: '#menu',
-            lockAnchors: false,
-            anchors:['firstPage', 'secondPage'],
-            navigation: true,
-            navigationPosition: 'left',
-            navigationTooltips: ['firstPage', 'secondPage'],
-            showActiveTooltip: false,
-            slidesNavigation: false,
-            slidesNavPosition: 'bottom',
+    if ($(window).width() > 1200) {
+       if ( $('#fullpage').length > 0 ) {
+            $('#fullpage').fullpage({
+                //Navigation
+                menu: '#menu',
+                lockAnchors: false,
+                anchors:['firstPage', 'secondPage'],
+                navigation: true,
+                navigationPosition: 'left',
+                navigationTooltips: ['firstPage', 'secondPage'],
+                showActiveTooltip: false,
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
 
-            //Scrolling
-            css3: true,
-            scrollingSpeed: 700,
-            autoScrolling: true,
-            fitToSection: true,
-            fitToSectionDelay: 1000,
-            scrollBar: false,
-            easing: 'easeInOutCubic',
-            easingcss3: 'ease',
-            loopBottom: false,
-            loopTop: false,
-            loopHorizontal: true,
-            continuousVertical: false,
-            continuousHorizontal: false,
-            scrollHorizontally: false,
-            interlockedSlides: false,
-            resetSliders: false,
-            fadingEffect: false,
-            normalScrollElements: '',
-            scrollOverflow: false,
-            scrollOverflowOptions: null,
-            touchSensitivity: 15,
-            normalScrollElementTouchThreshold: 5,
-            bigSectionsDestination: null,
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 1000,
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                continuousHorizontal: false,
+                scrollHorizontally: false,
+                interlockedSlides: false,
+                resetSliders: false,
+                fadingEffect: false,
+                normalScrollElements: '',
+                scrollOverflow: false,
+                scrollOverflowOptions: null,
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,
+                bigSectionsDestination: null,
 
-            //Accessibility
-            keyboardScrolling: true,
-            animateAnchor: true,
-            recordHistory: true,
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
 
-            //Design
-            controlArrows: true,
-            verticalCentered: true,
-            sectionsColor : '',
-            paddingTop: '100px',
-            paddingBottom: '65px',
-            fixedElements: '#menu',
-            responsiveWidth: 0,
-            responsiveHeight: 0,
-            responsiveSlides: false,
-            responsiveWidth: 1200,
+                //Design
+                controlArrows: true,
+                verticalCentered: true,
+                sectionsColor : '',
+                paddingTop: '100px',
+                paddingBottom: '65px',
+                fixedElements: '#menu',
+                responsiveWidth: 0,
+                responsiveHeight: 0,
+                responsiveSlides: false,
+                responsiveWidth: 1200,
 
-            //Custom selectors
-            sectionSelector: '.section',
-            slideSelector: '.slide',
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
 
-            //events
-            onLeave: function(index, nextIndex, direction){},
-            afterLoad: function(anchorLink, index){},
-            afterRender: function(){},
-            afterResize: function(){},
-            afterResponsive: function(isResponsive){},
-            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-            onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-        });    
+                //events
+                onLeave: function(index, nextIndex, direction){},
+                afterLoad: function(anchorLink, index){},
+                afterRender: function(){},
+                afterResize: function(){},
+                afterResponsive: function(isResponsive){},
+                afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+                onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+            });    
+        }
     }
+    
     
 
     /*---------------------------
