@@ -21,6 +21,9 @@
 
         &--big {
             width: 1200px;
+            @include m1200 {
+                width: 100%;
+            }
             p {
                 font-size: 21px;
                 line-height: 30px;
@@ -81,6 +84,12 @@ article {
         margin-bottom: 20px;
         & + img {
             margin-right: 0;
+        }
+        @include m700 {
+            width: 100%;
+            margin: 10px auto;
+            float: none;
+            display: block;
         }
     }
     &:after {
