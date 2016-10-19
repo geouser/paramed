@@ -46,6 +46,10 @@
         font-family: $rl;
         color: $blue;
         margin-bottom: 17px;
+
+        @media (max-width: 600px) {
+            font-size: 20px;
+        }
     }
 
     &__image {
@@ -57,9 +61,20 @@
         margin: 0;
         border-radius: 10px;
 
+        @media (max-width: 450px) {
+            height: 220px;
+        }
+        @media (max-width: 400px) {
+            height: 180px;
+        }
+        @media (max-width: 370px) {
+            height: 150px;
+        }
+
         img {
             display: inline-block;
             vertical-align: middle;
+            max-width: 90%;
         }
     }
 }

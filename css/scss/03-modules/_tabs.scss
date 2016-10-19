@@ -3,6 +3,10 @@
         @include flex();
         margin-bottom: 90px;
 
+        @media (max-width: 600px) {
+            margin-bottom: 50px;
+        }
+
         &__item {
             display: inline-block;
             vertical-align: middle;
@@ -14,6 +18,29 @@
                 .button {
                     background-color: $blue;
                 }
+            }
+
+            @media (max-width: 1200px) {
+                .button {
+                    font-size: 16px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+
+            @media (max-width: 850px) {
+                width: -webkit-calc(50% - 20px);
+                width: calc(50% - 20px);
+                margin: 10px;
+            }
+
+            @media (max-width: 450px) {
+                .button {
+                    font-size: 12px;
+                }
+                width: -webkit-calc(50% - 10px);
+                width: calc(50% - 10px);
+                margin: 5px;
             }
 
             a {
@@ -28,13 +55,22 @@
         @include flex($alignI: flex-start, $justify: flex-start);
         padding-bottom: 50px;
 
-
         .product {
             display: inline-block;
             vertical-align: middle;
             width: -webkit-calc(25% - 20px);
             width: calc(25% - 20px);
             margin: 0 10px 50px;
+
+            @media (max-width: 900px) {
+                width: -webkit-calc(33.333% - 20px);
+                width: calc(33.333% - 20px);
+            }
+
+            @media (max-width: 600px) {
+                width: -webkit-calc(50% - 20px);
+                width: calc(50% - 20px);
+            }
         }
     }
 }
