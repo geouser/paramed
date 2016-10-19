@@ -48,18 +48,36 @@
 
             <div class="wrapper">
                 <div class="news-box">
-                    <div href="" class="news-item magnific-ajax">
+                    <div href="#modal-popup-1" class="news-item magnific-article">
                         <figure style="background-image: url(images/news.jpg);"></figure>
                         <h3 class="title">Arab Health Exhibition</h3>
                         <div class="text">
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
                         </div>
+                        <div id="modal-popup-1" class="mfp-hide zoom-anim-dialog popup popup--article">
+                            <article class="scroll">
+                                <h2>Arab Health Exhibition 2</h2>
+                                <h3>Neque porro quisquam</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla </p>
+                                <h3>Neque porro quisquam</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla </p>    
+                            </article>
+                        </div>
                     </div>
-                    <div href="" class="news-item magnific-ajax">
+                    <div href="#modal-popup-2" class="news-item magnific-article">
                         <figure style="background-image: url(images/news.jpg);"></figure>
                         <h3 class="title">Arab Health Exhibition</h3>
                         <div class="text">
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                        <div id="modal-popup-2" class="mfp-hide zoom-anim-dialog popup popup--article">
+                            <article class="scroll">
+                                <h2>Arab Health Exhibition 2</h2>
+                                <h3>Neque porro quisquam</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla </p>
+                                <h3>Neque porro quisquam</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla </p>    
+                            </article>
                         </div>
                     </div>
                 </div> <!-- end news box -->
@@ -72,19 +90,19 @@
 
                 <div class="options-box">
                     <div>
-                        <a href="#" class="magnific">
+                        <a href="#modal-popup-call" class="magnific">
                             <i class="phone"></i>
                             <span>Request a call</span>
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="magnific">
+                        <a href="#modal-popup-chat" class="magnific">
                             <i class="chat"></i>
                             <span>Live chat</span>
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="magnific">
+                        <a href="#modal-popup-feedback" class="magnific">
                             <i class="mail"></i>
                             <span>Feedback</span>
                         </a>
@@ -172,7 +190,70 @@
 
         <!-- //////////////////////////////////////////////////////////////////////// -->
 
-        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup"></div>
+        <div id="modal-popup-call" class="mfp-hide zoom-anim-dialog popup">
+            <form action="" class="form">
+                <p class="form__title">Request a call</p>
+                <div class="double-group">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Telephone</label>
+                        <input type="text" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group form-group--button">
+                    <button class="button button--green">Request a call</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="modal-popup-chat" class="mfp-hide zoom-anim-dialog popup">
+            <form action="" class="form">
+                <p class="form__title">Live chat</p>
+                <div class="double-group">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">E-mail</label>
+                        <input type="text" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <div class="form-group form-group--button">
+                    <button class="button button--green">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="modal-popup-feedback" class="mfp-hide zoom-anim-dialog popup">
+            <form action="" class="form">
+                <p class="form__title">Feedback</p>
+                <div class="double-group">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">E-mail</label>
+                        <input type="text" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <div class="form-group form-group--button">
+                    <button class="button button--green">Send message</button>
+                </div>
+            </form>
+        </div>
 
         <div id="modal-popup-ok" class="mfp-hide zoom-anim-dialog popup result">
             <p class="heading">Ваша заявка принята =)</p>
@@ -186,6 +267,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.13/js/perfect-scrollbar.jquery.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>

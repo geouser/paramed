@@ -1,3 +1,10 @@
+.my-mfp-full-height .mfp-content {
+    height: 100%!important;
+
+    .popup {
+        height: 100%!important;
+    }
+}
 .popup {
     display: block;
     position: relative;
@@ -6,10 +13,44 @@
     border-radius: 10px;
     padding: 90px 100px;
     width: 780px;
+    overflow: hidden;
+
+    &--article {
+        height: 100%;
+    }
 
     .mfp-close {
         font-size: 48px;
         top: 40px;
         right: 40px;
+    }
+
+    article h3 {
+        color: $grey;
+    }
+
+    article {
+        height: 100%;
+        position: relative;
+        padding-right: 15px;
+    }
+    
+    .ps-container > .ps-scrollbar-y-rail {
+        opacity: 1;
+        display: block;
+    }
+
+    .ps-container.ps-active-x > .ps-scrollbar-x-rail,
+    .ps-container.ps-active-y > .ps-scrollbar-y-rail {
+        border-radius: 4px;
+        width: 8px;
+        opacity: 1;
+        background-color: #B6B6B8;
+    }
+
+    .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+        background-color: $green;
+        width: 8px;
+        right: 0;
     }
 }
