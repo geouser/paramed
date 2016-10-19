@@ -63,6 +63,7 @@ jQuery(document).ready(function($) {
             responsiveWidth: 0,
             responsiveHeight: 0,
             responsiveSlides: false,
+            responsiveWidth: 1200,
 
             //Custom selectors
             sectionSelector: '.section',

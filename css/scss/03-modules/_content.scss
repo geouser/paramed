@@ -28,6 +28,14 @@
                 font-size: 21px;
                 line-height: 30px;
                 color: #62615F;
+                @include m1200 {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+                @include m600 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
         }
     }
@@ -64,7 +72,12 @@ article {
         font-weight: 100;
         &:not(:first-of-type) {
             margin-top: 90px;
+            @include m1200 {
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
         }
+
     }
 
     ul {
