@@ -10,8 +10,17 @@
         cursor: pointer;
         position: relative;
 
+        @media (max-width: 600px) {
+            padding-left: 20px;
+            font-size: 20px;
+        }
+
         &:not(:first-of-type) {
             margin-top: 25px;
+
+            @media (max-width: 600px) {
+                margin-top: 15px;
+            }
         }
 
         .arrow {
@@ -28,6 +37,12 @@
             -webkit-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
+
+            @media (max-width: 600px) {
+                width: 15px;
+                height: 9px;
+                top: 13px;
+            }
             
             svg {
                 display: block;
@@ -73,8 +88,21 @@
             padding-bottom: 85px;
         }
 
+        @media (max-width: 600px) {
+            padding: 20px;
+
+            &:not(:last-of-type) {
+                padding-bottom: 20px;
+            }
+        }
+
         .button {
             width: 380px;
+
+            @media (max-width: 600px) {
+                width: auto;
+                padding: 0 50px;
+            }
         }
     }
 }
