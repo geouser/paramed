@@ -260,3 +260,8 @@
     @content;
   }
 }
+@mixin mh600 {
+  @media (max-height: 800px) {
+    @content;
+  }
+}

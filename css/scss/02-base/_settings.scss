@@ -25,5 +25,12 @@ body {
     &--wide {
         width: 100%;
         padding: 0 100px;
+        @include m1600 {
+            padding: 0 4%;
+        }
+    }
+    @include m1200 {
+        width: 100%;
+        padding: 0 15px;
     }
 }

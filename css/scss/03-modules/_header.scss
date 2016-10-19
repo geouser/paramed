@@ -176,6 +176,9 @@
         @include mh700 {
             padding-top: 80px;
         }
+        @include mh600 {
+            padding-top: 20px;
+        }
         &.active {
             visibility: visible;
             opacity: 1;
