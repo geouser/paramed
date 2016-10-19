@@ -1,0 +1,15 @@
+.popup {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 90px 100px;
+    width: 780px;
+
+    .mfp-close {
+        font-size: 48px;
+        top: 40px;
+        right: 40px;
+    }
+}
