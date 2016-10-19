@@ -84,11 +84,21 @@
     color: $grey;
     margin-bottom: 35px;
 
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
     &__title {
         font-size: 30px;
         font-family: $rl;
         color: $blue;
         margin-bottom: 10px;
+
+        @media (max-width: 600px) {
+            font-size: 25px;
+        }
     }
 
     a {
@@ -112,6 +122,10 @@
         padding: 0 15px 0 25px;
         border-radius: 10px;
 
+        @media (max-width: 600px) {
+            font-size: 16px;
+        }
+
         &:focus,
         &:active {
             border-color: $blue;
@@ -120,6 +134,10 @@
 
     input[type=text] {
         height: 55px;
+
+        @media (max-width: 600px) {
+            height: 40px;
+        }
     }
 
     textarea {
@@ -136,6 +154,10 @@
     .form-group {
         width: -webkit-calc(50% - 20px);
         width: calc(50% - 20px);
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
     }
 }
 

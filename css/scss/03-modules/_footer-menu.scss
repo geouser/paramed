@@ -2,6 +2,17 @@
     padding: 100px 0;
     text-align: center;
 
+    @media (max-width: 700px) {
+        padding: 50px 0;
+    }
+
+    .menu {
+        @media (max-width: 1200px) {
+            @include flex($alignI: flex-start, $justify: flex-start);
+            padding: 0 15px;
+        }
+    }
+
     .menu-item {
         display: inline-block;
         vertical-align: top;
@@ -12,18 +23,40 @@
             margin-right: 45px;
         }
 
+        @media (max-width: 1200px) {
+            width: 33.333%;
+            margin: 0 0 50px 0;
+            padding-right: 30px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 700px) {
+            width: 50%;
+            padding-right: 15px;
+        }
+
         a {
             font-size: 18px;
             color: $blue;
             text-decoration: underline;
             margin-bottom: 10px;
             display: inline-block;
+
+            @media (max-width: 700px) {
+                font-size: 14px;
+            }
         }
 
         .sub-menu {
             .menu-item {
                 display: block;
                 margin-right: 0;
+                width: 100%;
+                margin: 0;
+                padding: 0;
 
                 a {
                     color: $grey;

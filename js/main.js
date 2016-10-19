@@ -111,7 +111,7 @@ jQuery(document).ready(function($) {
     if ( $( ".accordion" ).length > 0 ) {
         $( ".accordion" ).accordion({
             collapsible: true,
-            heightStyle: "auto"
+            heightStyle: "content"
         });    
     }
 
