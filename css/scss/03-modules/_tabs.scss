@@ -1,6 +1,6 @@
 .tabs {
     &-nav {
-        @include flex();
+        @include flex($justify: flex-start);
         margin-bottom: 90px;
 
         @media (max-width: 600px) {

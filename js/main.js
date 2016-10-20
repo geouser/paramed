@@ -104,7 +104,6 @@ jQuery(document).ready(function($) {
     ---------------------------*/
     if ( $( ".tabs" ).length > 0 ) {
         $( ".tabs" ).tabs({
-            collapsible: true,
             heightStyle: "content"
         });    
     }
